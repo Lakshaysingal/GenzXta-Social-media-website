@@ -1,1 +1,1 @@
-# GenzXta-Social-media-website
+# Social-media-website
