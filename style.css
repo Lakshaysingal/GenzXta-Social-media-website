@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    
+    background: #f0eef6;
+   
+
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #675678 ;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.logo{
+    margin-right: 45px;
+    font-size: 30px;
+
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+
+}
+.user-profile img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.user-profile{
+    margin-left: 30px;
+}
+.search-box{
+    background: #ffffff;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.search-box img{
+    width: 18px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border:none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+    
+}
+
+
+.left-sidebar{
+    flex-basis: 22%;
+    position: sticky;
+    top:70px;
+    align-self: flex-start;
+    
+    
+
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top:70px;
+    align-self: flex-start;
+
+}
+.main-content{
+    flex-basis: 45%;
+
+}
+.left-sidebar .profile{
+    background: #ffffff;
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    position: sticky;
+
+
+
+
+}
+
+.left-sidebar .profile img {
+ width:40px;
+ border-radius: 50%;
+ cursor: pointer;
+ margin: 10px;
+}
+
+.left-sidebar .profile .profile-id {
+    margin-top: 10px ;
+    font-size: 15px;
+    color: grey;
+}
+.left-sidebar .profile .profile-id h4 {
+    font-size: 15px;
+    color: black;
+    
+}
+.sidebar{
+
+    margin: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px; 
+    background: #ffffff;
+    align-items: center;
+    /* position: sticky; */
+    
+}
+
+.sidebar .menu-item{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+.sidebar .menu-item   i{
+    font-size: 25px;
+    margin-right:20px;
+
+}
+.sidebar .menu-item h3 {
+    font-size: 15px;
+}
+.sidebar .menu-item:hover{
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.right .messages{
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+.right .messages .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.right .messages i {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.right .messages .search-bar {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    background: lightgray;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+
+
+}
+
+.right .messages .search-bar input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border:none;
+    font-size: 15px;
+}
+ 
+
+.right .messages .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.right .messages .category h6 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid rgb(240, 238, 246);
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+.right .messages .category {
+    border-color:#241e38 ;
+}
+
+.right .messages .message-requests {
+    color: #ffffff;     
+}
+
+.right .messages .message {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: start;
+}
+
+.right .message .profile-photo {
+    position: relative;
+    overflow:visible;
+}
+
+.right .profile-photo img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.right .messages .message:last-child {
+    margin: 0;
+}
+
+.right .messages .message p {
+    font-size:15px;
+}
+
+.right .messages .message .profile-photo .active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background: #51fb51;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: lightcoral;
+    color: #ffffff;
+}
+.middle .create-post {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+}
+.middle .create-post .profile-photo img {
+    width:40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+} 
+
+.middle .create-post input[type="text"] {
+    width: 100%;
+    padding-left: 5px;
+    background: transparent;
+    color: black;
+    margin-right: 5px;
+}
+
+.middle .create-post input{
+    border: none;
+    outline: none;
+}
+
+
+.middle .feeds .feed {
+    background:#ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.middle .feeds .feed .head .user img{
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+
+.middle .feed .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle .feed .user {
+    display: flex;
+    gap: 10px;
+}
+
+.middle .feed .photo {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.7rem 0;
+}
+
+.middle .feed .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.middle .liked-by {
+    display: flex;
+}
+
+.middle .liked-by span {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+    margin-left: -0.6rem;
+    margin-bottom: 10px;
+}
+
+
+.middle .liked-by p {
+    margin-left: 5px;
+}
+.text-muted{
+    margin-top: 10px;
+    color: gray;
+}
+
